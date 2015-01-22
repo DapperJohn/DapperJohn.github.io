@@ -1,0 +1,23 @@
+CTYPE html>
+<html>
+  <head>
+    <title>John Anny</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" alt="John Anny" class="name">John Anny</a>
+      <nav class="site-nav">
+        {% if page.title == "About" %}
+          <a href="/about" alt="About Me" class="active">About Me</a>
+        {% else %}
+          <a href="/about" alt="About Me">About Me</a>
+        {% endif %}
+      </nav>
+    </header>
+    <div class="main-content">
+      {{content}}
+    </div>
+  </body>
+</html>
+
